@@ -11,12 +11,12 @@ body{
     min-width: 320px;
     overflow-x: hidden;
 }
-@media(max-width: 450px){
+@media(max-width: 449px){
     .front__bodyInput{
         flex-direction: column;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 449px){
     .front__footerMiddle{
         flex-direction: column;
     }
@@ -26,17 +26,25 @@ body{
         max-width: 180px;
     }
 }
+.container{
+    
+}
 
 .back{
+    display: flex;
     position: relative;
+    width: 100%;
+    
 }
 .header{
+    width: 100%;
+    height: 285px;
     background-color: $bl;
     display: flex;
     justify-content: center;
     background-image: url(../images/Designleft.svg), url(../images/Designright.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position-x: left,right;
     &__topLogo{
         margin-top: 13px;
         
@@ -72,17 +80,18 @@ body{
 //     background-size: auto;
 // }
 .front{
+    position: absolute;
     background: $wh;
     border: 1px solid #DFDFE0;
     border-radius: 8px;
-    padding: 0 40px;
+    margin-top: 82px;
 }
 .container__front{
-    padding: 0 40px;
+    padding: 0 32px;
     // margin: 0 40px;
     background: $wh;
-     border: 1px solid #DFDFE0;
-     border-radius: 8px;
+    border: 1px solid #DFDFE0;
+    border-radius: 8px;
 }
 .front__header{
     display: grid;
@@ -217,6 +226,10 @@ body{
     color: #5E6872;
     margin-bottom: 20px;
 }
+.line{
+    border: 1px solid #DFDFE0;
+    padding: 0 27px;
+}
 .front__footerUp{
     display: grid;
     margin: auto;
@@ -262,7 +275,7 @@ body{
 }
 // 
 .front__footerInputOne{
-    width: 273px;
+    max-width: 273px;
     height: 46px;
     font-family: 'Inter';
     font-style: normal;
