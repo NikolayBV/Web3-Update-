@@ -11,12 +11,12 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
   .front__bodyInput {
     flex-direction: column;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 449px) {
   .front__footerMiddle {
     flex-direction: column;
   }
