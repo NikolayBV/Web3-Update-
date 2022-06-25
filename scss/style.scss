@@ -11,23 +11,29 @@ body{
     min-width: 320px;
     overflow-x: hidden;
 }
-@media(max-width: 449px){
-    .front__bodyInput{
+@media (max-width: 380px){
+    .front__bodyInput {
         flex-direction: column;
+        align-items: center;
     }
 }
-@media(max-width: 449px){
+
+@media(max-width: 380px){
     .front__footerMiddle{
         flex-direction: column;
+        align-items: center;
     }
 }
-@media(max-width: 450px){
+@media(max-width: 380px){
     .front__footerInputOne{
         max-width: 180px;
+        align-items: center;
     }
 }
-.container{
-    
+@media(max-width: 380px){
+    .front{
+        max-width: 18rem;
+    }
 }
 
 .back{
@@ -50,7 +56,7 @@ body{
         
     }
     &__logo{
-        padding-left: 11px;
+        padding-left: 9px;
     }
     &__text{
         font-family: 'Manrope';
@@ -60,7 +66,7 @@ body{
         line-height: 10px;
         color: $wh;
         margin: auto;
-        padding-top: 7px;
+        padding-top: 4px;
     }
     &__textTwo{
         font-family: 'Manrope';
@@ -80,6 +86,7 @@ body{
 //     background-size: auto;
 // }
 .front{
+    width: 23rem;
     position: absolute;
     background: $wh;
     border: 1px solid #DFDFE0;
@@ -87,7 +94,7 @@ body{
     margin-top: 82px;
 }
 .container__front{
-    padding: 0 32px;
+    //padding: 0 32px;
     // margin: 0 40px;
     background: $wh;
     border: 1px solid #DFDFE0;
@@ -107,11 +114,11 @@ body{
     line-height: 18px;
     letter-spacing: -0.154px;
     color: #354371;
-    margin-top: 7px;
+    margin-top: 18px;
     margin-bottom: 0;
 }
 .front__headingText{
-    max-width: 312px;
+    max-width: 20rem;
     font-family: 'Inter';
     font-size: 15px;
     line-height: 24px;
@@ -124,25 +131,23 @@ body{
 .front__bodyButton{
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 9px;
 
 }
 .button__bodyOne{
-    margin-right: 9.5px; 
-    font-family: 'Inter';
+    margin-right: 10.5px;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.154px;
-    color: #5E6872;
-    flex: none;
-    order: 0;
-    flex-grow: 0;   
-    background: $wh;
+    background: #ffffff;
     border: 1px solid #DFDFE0;
     border-radius: 8px;
     border: none;
+    padding: 2px 12px;
+    color: #1D2C3C;
 }
 .button__bodyTwo{
     background: #FCFCFC;
@@ -163,35 +168,37 @@ body{
     padding: 6px 12px;
 }
 .front__bodyInput{
-    margin-top: 20px;
+    margin-top: 18px;
     display: flex;
-    justify-content: center;
 }
 .body__inputOne{
-    background: $wh;
+    background: #ffffff;
     max-width: 78px;
     height: 45px;
     border: 1px solid #DFDFE0;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #1D2C3C;
-    padding: 13px 20px;
+    margin-left: 29px;
     margin-right: 6px;
+    padding-left: 19px;
+    padding-right: 28px;
 }
 .body__inputTwo{
     max-width: 226px;
     height: 45px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     border: 1px solid #DFDFE0;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #1D2C3C;
-    padding: 13px 20px;
+    padding-left: 19px;
+    padding-right: 20px;
 }
 .front__middle{
     display: grid;
@@ -216,15 +223,17 @@ body{
     padding: 9px 10px;
 }
 .front__middleText{
-    max-width: 281px;
-    font-family: 'Inter';
+    max-width: 18rem;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
     text-align: center;
     color: #5E6872;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding-right: 5px;
 }
 .line{
     border: 1px solid #DFDFE0;
@@ -235,7 +244,7 @@ body{
     margin: auto;
     justify-items: center;
     margin-bottom: 0;
-    margin-top: 18px;
+    margin-top: 19px;
 }
 .front__footerHeading{
     margin: auto;
@@ -247,6 +256,7 @@ body{
     text-align: center;
     letter-spacing: -0.154px;
     color: #354371;
+    margin-top: 1px;
 }
 .front__footerText{
     font-family: 'Inter';
@@ -259,6 +269,7 @@ body{
     color: rgba(29, 44, 60, 0.52);
     margin-top: 8px;
     margin-bottom: 11px;
+    padding-right: 6px;
 }
 .front__footerAccount{
     font-family: 'Inter';
@@ -267,41 +278,46 @@ body{
     font-size: 14px;
     line-height: 17px;
     color: #B6BABD;
+    padding-left: 1.8rem;
 }
 .front__footerMiddle{
-    margin-top: 10px;
+    margin-top: 7px;
     display: flex;
-    justify-content: center;
 }
 // 
 .front__footerInputOne{
-    max-width: 273px;
+    max-width: 253px;
     height: 46px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #828282;
-    padding: 13px 20px;
-    border: 1px solid #B6BABD
+    margin-left: 1.8rem;
+    padding-left: 19px;
+    padding-right: 33px;
+    border: 1px solid #B6BABD;
 }
 .front__footerInputTwo{
-    width: 98px;
+    width: 72px;
     height: 46px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    border: 1px solid #B6BABD
+    /* margin-left: 0px; */
+    padding-left: 9px;
+    border: 1px solid #B6BABD;
 }
 .front__footerDown{
     display: grid;
-    justify-items: center;
-    margin-top: 24px;
+    /* justify-items: center; */
+    margin-top: 23px;
     margin-bottom: 38px;
+    margin-left: 7.55rem;
 }
 .front__footerSign{
     background: rgba(72, 156, 255, 0.3);

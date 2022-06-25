@@ -11,19 +11,27 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 449px) {
+@media (max-width: 380px) {
   .front__bodyInput {
     flex-direction: column;
+    align-items: center;
   }
 }
-@media (max-width: 449px) {
+@media (max-width: 380px) {
   .front__footerMiddle {
     flex-direction: column;
+    align-items: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 380px) {
   .front__footerInputOne {
     max-width: 180px;
+    align-items: center;
+  }
+}
+@media (max-width: 380px) {
+  .front {
+    max-width: 18rem;
   }
 }
 .back {
@@ -46,7 +54,7 @@ body {
   margin-top: 13px;
 }
 .header__logo {
-  padding-left: 11px;
+  padding-left: 9px;
 }
 .header__text {
   font-family: "Manrope";
@@ -56,7 +64,7 @@ body {
   line-height: 10px;
   color: #ffffff;
   margin: auto;
-  padding-top: 7px;
+  padding-top: 4px;
 }
 .header__textTwo {
   font-family: "Manrope";
@@ -71,6 +79,7 @@ body {
 }
 
 .front {
+  width: 23rem;
   position: absolute;
   background: #ffffff;
   border: 1px solid #DFDFE0;
@@ -79,7 +88,6 @@ body {
 }
 
 .container__front {
-  padding: 0 32px;
   background: #ffffff;
   border: 1px solid #DFDFE0;
   border-radius: 8px;
@@ -100,12 +108,12 @@ body {
   line-height: 18px;
   letter-spacing: -0.154px;
   color: #354371;
-  margin-top: 7px;
+  margin-top: 18px;
   margin-bottom: 0;
 }
 
 .front__headingText {
-  max-width: 312px;
+  max-width: 20rem;
   font-family: "Inter";
   font-size: 15px;
   line-height: 24px;
@@ -119,25 +127,23 @@ body {
 .front__bodyButton {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 9px;
 }
 
 .button__bodyOne {
-  margin-right: 9.5px;
+  margin-right: 10.5px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.154px;
-  color: #5E6872;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   background: #ffffff;
   border: 1px solid #DFDFE0;
   border-radius: 8px;
   border: none;
+  padding: 2px 12px;
+  color: #1D2C3C;
 }
 
 .button__bodyTwo {
@@ -160,9 +166,8 @@ body {
 }
 
 .front__bodyInput {
-  margin-top: 20px;
+  margin-top: 18px;
   display: flex;
-  justify-content: center;
 }
 
 .body__inputOne {
@@ -176,8 +181,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #1D2C3C;
-  padding: 13px 20px;
+  margin-left: 29px;
   margin-right: 6px;
+  padding-left: 19px;
+  padding-right: 28px;
 }
 
 .body__inputTwo {
@@ -190,7 +197,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #1D2C3C;
-  padding: 13px 20px;
+  padding-left: 19px;
+  padding-right: 20px;
 }
 
 .front__middle {
@@ -218,7 +226,7 @@ body {
 }
 
 .front__middleText {
-  max-width: 281px;
+  max-width: 18rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -226,7 +234,9 @@ body {
   line-height: 18px;
   text-align: center;
   color: #5E6872;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-right: 5px;
 }
 
 .line {
@@ -239,7 +249,7 @@ body {
   margin: auto;
   justify-items: center;
   margin-bottom: 0;
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .front__footerHeading {
@@ -252,6 +262,7 @@ body {
   text-align: center;
   letter-spacing: -0.154px;
   color: #354371;
+  margin-top: 1px;
 }
 
 .front__footerText {
@@ -265,6 +276,7 @@ body {
   color: rgba(29, 44, 60, 0.52);
   margin-top: 8px;
   margin-bottom: 11px;
+  padding-right: 6px;
 }
 
 .front__footerAccount {
@@ -274,16 +286,16 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #B6BABD;
+  padding-left: 1.8rem;
 }
 
 .front__footerMiddle {
-  margin-top: 10px;
+  margin-top: 7px;
   display: flex;
-  justify-content: center;
 }
 
 .front__footerInputOne {
-  max-width: 273px;
+  max-width: 253px;
   height: 46px;
   font-family: "Inter";
   font-style: normal;
@@ -291,12 +303,14 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #828282;
-  padding: 13px 20px;
+  margin-left: 1.8rem;
+  padding-left: 19px;
+  padding-right: 33px;
   border: 1px solid #B6BABD;
 }
 
 .front__footerInputTwo {
-  width: 98px;
+  width: 72px;
   height: 46px;
   font-family: "Inter";
   font-style: normal;
@@ -304,14 +318,17 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  /* margin-left: 0px; */
+  padding-left: 9px;
   border: 1px solid #B6BABD;
 }
 
 .front__footerDown {
   display: grid;
-  justify-items: center;
-  margin-top: 24px;
+  /* justify-items: center; */
+  margin-top: 23px;
   margin-bottom: 38px;
+  margin-left: 7.55rem;
 }
 
 .front__footerSign {
