@@ -166,10 +166,14 @@ body{
     letter-spacing: -0.154px;
     background: #ffffff;
     border: 1px solid #DFDFE0;
-    border-radius: 8px;
     border: none;
     padding: 2px 12px;
     color: #1D2C3C;
+}
+.button__bodyOne:hover{
+    background: #FCFCFC;
+    border: 1px solid #B6BABD;
+
 }
 .button__bodyTwo{
     background: #FCFCFC;
