@@ -343,7 +343,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  /* margin-left: 0px; */
+  margin-left: -2px;
   padding-left: 9px;
   border: 1px solid #B6BABD;
 }
