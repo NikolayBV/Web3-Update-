@@ -13,21 +13,38 @@ body{
 }
 @media (max-width: 380px){
     .front__bodyInput {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 380px){
+    .body__inputOne{
+        width: 30px;
+        height: 40px !important;
+        padding-right: 2px !important;
+        padding-left: 4px !important;
+    }
+    .body__inputTwo{
+        width: 150px;
+        height: 40px !important;
+        padding-right: 2px !important;
+        padding-left: 10px !important;
     }
 }
 
 @media(max-width: 380px){
     .front__footerMiddle{
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 }
 @media(max-width: 380px){
     .front__footerInputOne{
-        max-width: 180px;
+        max-width: 160px !important;
+        height: 40px !important;
         align-items: center;
+    }
+    .front__footerInputTwo{
+        max-width: 60px;
+        height: 40px !important;
     }
 }
 @media(max-width: 380px){
@@ -35,7 +52,12 @@ body{
         max-width: 18rem;
     }
 }
-
+@media(max-width: 380px){
+    .front__footerDown{
+        justify-content: center !important;
+        margin-left: 0 !important;
+    }
+}
 .back{
     display: flex;
     position: relative;
