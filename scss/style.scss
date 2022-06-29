@@ -1,0 +1,329 @@
+$bl: #000F30;
+$wh: #ffffff;
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing:inherit;
+}
+body{
+    min-width: 320px;
+    position: relative;
+}
+@media (max-width: 920px) and (min-width: 768px) {
+    .front__container {
+      width: 50%;
+    }
+    .front__downAccount{
+      display: flex;
+    justify-content: center;
+    }
+  }
+  @media (min-width: 920px) {
+    .front__container {
+      width: 500px;
+    }
+    .front__downAccount{
+      display: flex;
+    justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .front__container {
+      max-width: 371px;
+    }
+  }
+  @media (max-width: 410px) {
+    .front__container {
+      max-width: 300px;
+    }
+    .front__input1{
+      max-width: 50px;
+    }
+    .front__input2{
+      max-width: 160px;
+    }
+    .front__downInput1{
+      max-width: 150px;
+    }
+    .front__downInput2{
+      max-width: 70px;
+    }
+    .front__downAccount{
+      display: flex;
+    justify-content: center;
+    }
+  }
+.header__container{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 285px;
+    background: #000F30;
+    background-image: url(../images/Designleft.svg), url(../images/Designright.svg);
+    background-repeat: no-repeat;
+    background-position-x: left,right;
+}
+.header__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
+}
+.header__heading{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.73404px;
+    line-height: 10px;
+    color: #FFFFFF;
+    margin-top: 7.4px;
+    margin-bottom: 0;
+}
+.header__headingText{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.1383px;
+    line-height: 14px;
+    color:#FFFFFF;
+    margin-top: 0;
+    margin-bottom: 10.4px;
+}
+.front{
+    padding-top: 82px;
+}
+.front__container{
+    padding-left: 32px;
+    padding-right: 29px;
+    background: #FFFFFF;
+    border: 1px solid #DFDFE0;
+    border-radius: 8px;    
+    margin: auto;
+}
+.front__up{
+    display: block;
+    padding-top: 20px;
+    
+}
+.front__heading{
+    margin: auto;
+    max-width: 176px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #354371;
+}
+.front__headingText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.154px;
+    color: rgba(29, 44, 60, 0.52);
+    margin-top: 7px;
+}
+.front__button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+.front__button1{
+    width: 60px;
+    height: 30px;
+    margin-right: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #5E6872;
+    background: #FFFFFF;
+    border: none;
+}
+.front__button1:hover{
+    background: #FFFFFF;
+    border: 2px solid #32404E;
+}
+.front__button2{
+    width: 66px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #32404E;
+    background: #FFFFFF;
+    border: 1px solid #B6BABD;
+}
+.front__input{
+    display: flex;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+.front__input1{
+    width: 78px;
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D2C3C;
+    margin-right: 6px;
+    padding-left: 20px;
+    border: 1px solid #B6BABD;
+}
+.front__input2{
+    width: 226px;
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    padding-left: 20px;
+    border: 1px solid #B6BABD;
+}
+.front__buttonContinue{
+    display: flex;
+    flex-wrap: wrap;
+}
+.front__continue{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    margin: auto;
+    background: rgba(72, 156, 255, 0.3);
+    width: 127px;
+    height: 40px;
+    border: none;
+}
+.front__continueText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #5E6872;
+    width: 281px;
+    margin-top: 10px;
+}
+.front__textLink2{
+    color:rgba(23, 96, 179, 0.5);
+}
+.front__textLink2:visited{
+    outline-color: red;
+}
+
+.front__line{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    width: 318px;
+    border: 1px solid #DFDFE0;
+}
+
+.front__downSignIn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.154px;
+    color: #354371;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.front__downHeadingText{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.154px;
+    color: rgba(29, 44, 60, 0.52);
+}
+.front__downAccount{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B6BABD;
+    
+}
+.front__downInput{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+.front__downInput1{
+    width: 273px;
+    height: 45px;
+    padding-left: 20px;
+    border-right: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    border: 1px solid #B6BABD
+}
+.front__downInput2{
+    width: 98px;
+    height: 45px;
+    padding-left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    border: 1px solid #B6BABD;
+    border-left: 2px;
+}
+.front__downButton{
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
+}
+.front__downButtonSignIn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    background: rgba(72, 156, 255, 0.3);
+    width: 127px;
+    height: 40px;
+    border: none;
+}
+
+
+
+
+
