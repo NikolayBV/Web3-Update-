@@ -8,124 +8,114 @@ html {
 
 body {
   min-width: 320px;
-  overflow-x: hidden;
-}
-
-@media (max-width: 380px) {
-  .front__bodyInput {
-    justify-content: center;
-  }
-}
-@media (max-width: 380px) {
-  .body__inputOne {
-    width: 30px;
-    height: 40px !important;
-    padding-right: 2px !important;
-    padding-left: 4px !important;
-  }
-
-  .body__inputTwo {
-    width: 150px;
-    height: 40px !important;
-    padding-right: 2px !important;
-    padding-left: 10px !important;
-  }
-}
-@media (max-width: 380px) {
-  .front__footerMiddle {
-    justify-content: center;
-  }
-}
-@media (max-width: 380px) {
-  .front__footerInputOne {
-    max-width: 160px !important;
-    height: 40px !important;
-    align-items: center;
-  }
-
-  .front__footerInputTwo {
-    max-width: 60px;
-    height: 40px !important;
-  }
-}
-@media (max-width: 380px) {
-  .front {
-    max-width: 18rem;
-  }
-}
-@media (max-width: 380px) {
-  .front__footerDown {
-    justify-content: center !important;
-    margin-left: 0 !important;
-  }
-}
-.back {
-  display: flex;
   position: relative;
-  width: 100%;
 }
 
-.header {
+@media (max-width: 920px) and (min-width: 768px) {
+  .front__container {
+    width: 50%;
+  }
+  .front__downAccount{
+    display: flex;
+  justify-content: center;
+  }
+}
+@media (min-width: 920px) {
+  .front__container {
+    width: 500px;
+  }
+  .front__downAccount{
+    display: flex;
+  justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .front__container {
+    max-width: 371px;
+  }
+}
+@media (max-width: 410px) {
+  .front__container {
+    max-width: 300px;
+  }
+  .front__input1{
+    max-width: 50px;
+  }
+  .front__input2{
+    max-width: 160px;
+  }
+  .front__downInput1{
+    max-width: 150px;
+  }
+  .front__downInput2{
+    max-width: 70px;
+  }
+  .front__downAccount{
+    display: flex;
+  justify-content: center;
+  }
+}
+.header__container {
+  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 285px;
-  background-color: #000F30;
-  display: flex;
-  justify-content: center;
+  background: #000F30;
   background-image: url(../images/Designleft.svg), url(../images/Designright.svg);
   background-repeat: no-repeat;
   background-position-x: left, right;
 }
-.header__topLogo {
-  margin-top: 13px;
-}
+
 .header__logo {
-  padding-left: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 13px;
 }
-.header__text {
+
+.header__heading {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 9.73404px;
   line-height: 10px;
-  color: #ffffff;
-  margin: auto;
-  padding-top: 4px;
+  color: #FFFFFF;
+  margin-top: 7.4px;
+  margin-bottom: 0;
 }
-.header__textTwo {
+
+.header__headingText {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
   font-size: 7.1383px;
   line-height: 14px;
-  color: #ffffff;
-  margin: auto;
-  padding-left: 10px;
-  padding-bottom: 14px;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 10.4px;
 }
 
 .front {
-  width: 23rem;
-  position: absolute;
-  background: #ffffff;
-  border: 1px solid #DFDFE0;
-  border-radius: 8px;
-  margin-top: 82px;
+  padding-top: 82px;
 }
 
-.container__front {
-  background: #ffffff;
+.front__container {
+  padding-left: 32px;
+  padding-right: 29px;
+  background: #FFFFFF;
   border: 1px solid #DFDFE0;
   border-radius: 8px;
-}
-
-.front__header {
-  display: grid;
   margin: auto;
-  justify-items: center;
-  margin-bottom: 0;
+}
+
+.front__up {
+  display: block;
+  padding-top: 20px;
 }
 
 .front__heading {
+  margin: auto;
+  max-width: 176px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -133,54 +123,48 @@ body {
   line-height: 18px;
   letter-spacing: -0.154px;
   color: #354371;
-  margin-top: 18px;
-  margin-bottom: 0;
 }
 
 .front__headingText {
-  max-width: 20rem;
   font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.154px;
   color: rgba(29, 44, 60, 0.52);
   margin-top: 7px;
-  margin-bottom: 0;
 }
 
-.front__bodyButton {
+.front__button {
   display: flex;
   justify-content: center;
-  margin-top: 9px;
 }
 
-.button__bodyOne {
-  margin-right: 10.5px;
+.front__button1 {
+  width: 60px;
+  height: 30px;
+  margin-right: 6px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.154px;
-  background: #ffffff;
-  border: 1px solid #DFDFE0;
+  color: #5E6872;
+  background: #FFFFFF;
   border: none;
-  padding: 2px 12px;
-  color: #1D2C3C;
 }
 
-.button__bodyOne:hover {
-  background: #FCFCFC;
-  border: 1px solid #B6BABD;
+.front__button1:hover {
+  background: #FFFFFF;
+  border: 2px solid #32404E;
 }
 
-.button__bodyTwo {
-  background: #FCFCFC;
-  border: 1px solid #B6BABD;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+.front__button2 {
+  width: 66px;
+  height: 30px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -188,60 +172,50 @@ body {
   line-height: 18px;
   letter-spacing: -0.154px;
   color: #32404E;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  padding: 6px 12px;
+  background: #FFFFFF;
 }
 
-.front__bodyInput {
-  margin-top: 18px;
+.front__input {
   display: flex;
+  justify-content: center;
+  margin-top: 9px;
+  margin-bottom: 24px;
 }
 
-.body__inputOne {
-  background: #ffffff;
-  max-width: 78px;
+.front__input1 {
+  width: 78px;
   height: 45px;
-  border: 1px solid #DFDFE0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #1D2C3C;
-  margin-left: 29px;
   margin-right: 6px;
-  padding-left: 19px;
-  padding-right: 28px;
+  padding-left: 20px;
+  border: 1px solid #B6BABD;
 }
 
-.body__inputTwo {
-  max-width: 226px;
+.front__input2 {
+  width: 226px;
   height: 45px;
   font-family: "Inter";
   font-style: normal;
-  border: 1px solid #DFDFE0;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #1D2C3C;
-  padding-left: 19px;
-  padding-right: 20px;
+  color: #828282;
+  padding-left: 20px;
+  border: 1px solid #B6BABD;
 }
 
-.front__middle {
-  display: grid;
-  margin: auto;
-  justify-items: center;
-  margin-top: 24px;
-  margin-bottom: 0;
+.front__buttonContinue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.front__bodyContinue {
-  width: 127px;
-  height: 40px;
-  background: rgba(72, 156, 255, 0.3);
+.front__continue {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -250,12 +224,14 @@ body {
   text-align: center;
   letter-spacing: -0.408px;
   color: #FFFFFF;
+  margin: auto;
+  background: rgba(72, 156, 255, 0.3);
+  width: 127px;
+  height: 40px;
   border: none;
-  padding: 9px 10px;
 }
 
-.front__middleText {
-  max-width: 18rem;
+.front__continueText {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -263,26 +239,26 @@ body {
   line-height: 18px;
   text-align: center;
   color: #5E6872;
+  width: 281px;
   margin-top: 10px;
-  margin-bottom: 3px;
-  padding-right: 5px;
 }
 
-.line {
+.front__textLink2 {
+  color: rgba(23, 96, 179, 0.5);
+}
+
+.front__textLink2:visited {
+  color: rgb(108, 25, 217);
+}
+
+.front__line {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  width: 318px;
   border: 1px solid #DFDFE0;
-  padding: 0 27px;
 }
 
-.front__footerUp {
-  display: grid;
-  margin: auto;
-  justify-items: center;
-  margin-bottom: 0;
-  margin-top: 19px;
-}
-
-.front__footerHeading {
-  margin: auto;
+.front__downSignIn {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -291,10 +267,13 @@ body {
   text-align: center;
   letter-spacing: -0.154px;
   color: #354371;
-  margin-top: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.front__footerText {
+.front__downHeadingText {
+  margin-top: 8px;
+  margin-bottom: 10px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -303,67 +282,59 @@ body {
   text-align: center;
   letter-spacing: -0.154px;
   color: rgba(29, 44, 60, 0.52);
-  margin-top: 8px;
-  margin-bottom: 11px;
-  padding-right: 6px;
 }
 
-.front__footerAccount {
+.front__downAccount {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #B6BABD;
-  padding-left: 1.8rem;
 }
 
-.front__footerMiddle {
-  margin-top: 7px;
+.front__downInput {
   display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
-.front__footerInputOne {
-  max-width: 253px;
-  height: 46px;
+.front__downInput1 {
+  width: 273px;
+  height: 45px;
+  padding-left: 20px;
+  border-right: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #828282;
-  margin-left: 1.8rem;
-  padding-left: 19px;
-  padding-right: 33px;
   border: 1px solid #B6BABD;
 }
 
-.front__footerInputTwo {
-  width: 72px;
-  height: 46px;
+.front__downInput2 {
+  width: 98px;
+  height: 45px;
+  padding-left: 10px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  margin-left: -2px;
-  padding-left: 9px;
   border: 1px solid #B6BABD;
+  border-left: 2px;
 }
 
-.front__footerDown {
-  display: grid;
-  /* justify-items: center; */
-  margin-top: 23px;
+.front__downButton {
   margin-bottom: 38px;
-  margin-left: 7.55rem;
+  display: flex;
+  justify-content: center;
 }
 
-.front__footerSign {
-  background: rgba(72, 156, 255, 0.3);
-  width: 127px;
-  height: 40px;
+.front__downButtonSignIn {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -372,6 +343,8 @@ body {
   text-align: center;
   letter-spacing: -0.408px;
   color: #FFFFFF;
+  background: rgba(72, 156, 255, 0.3);
+  width: 127px;
+  height: 40px;
   border: none;
-  padding: 9px 10px;
 }/*# sourceMappingURL=style.css.map */
