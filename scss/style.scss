@@ -78,7 +78,7 @@ body{
     font-size: 9.73404px;
     line-height: 10px;
     color: #FFFFFF;
-    margin-top: 7.4px;
+    margin-top: 8.4px;
     margin-bottom: 0;
 }
 .header__headingText{
@@ -95,8 +95,8 @@ body{
     padding-top: 82px;
 }
 .front__container{
-    padding-left: 32px;
-    padding-right: 29px;
+    padding-left: 30px;
+    padding-right: 28px;
     background: #FFFFFF;
     border: 1px solid #DFDFE0;
     border-radius: 8px;    
@@ -109,7 +109,7 @@ body{
 }
 .front__heading{
     margin: auto;
-    max-width: 176px;
+    max-width: 179px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -120,6 +120,7 @@ body{
 }
 .front__headingText{
     font-family: 'Inter';
+    min-width: 304px;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -128,6 +129,7 @@ body{
     letter-spacing: -0.154px;
     color: rgba(29, 44, 60, 0.52);
     margin-top: 7px;
+    margin-bottom: 0;
 }
 .front__button{
     display: flex;
@@ -137,7 +139,9 @@ body{
 .front__button1{
     width: 60px;
     height: 30px;
-    margin-right: 6px;
+    margin-right: 8px;
+    padding-right: 12px;
+    margin-top: 10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -155,6 +159,7 @@ body{
 .front__button2{
     width: 66px;
     height: 30px;
+    margin-top: 10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -173,7 +178,8 @@ body{
 }
 .front__input1{
     width: 78px;
-    height: 45px;
+    height: 44px;
+    padding-top: 0px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -181,19 +187,20 @@ body{
     line-height: 19px;
     color: #1D2C3C;
     margin-right: 6px;
-    padding-left: 20px;
+    padding-left: 18px;
     border: 1px solid #B6BABD;
 }
 .front__input2{
     width: 226px;
-    height: 45px;
+    height: 43px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    padding-top: 0px;
     line-height: 19px;
     color: #828282;
-    padding-left: 20px;
+    padding-left: 18px;
     border: 1px solid #B6BABD;
 }
 .front__buttonContinue{
@@ -226,16 +233,23 @@ body{
     color: #5E6872;
     width: 281px;
     margin-top: 10px;
+    padding-right: 9px;
+}
+.front__textLink1{
+    color:rgba(23, 96, 179, 0.5);
+}
+.front__textLink1:visited{
+    color: rgb(206, 50, 50);
 }
 .front__textLink2{
     color:rgba(23, 96, 179, 0.5);
 }
 .front__textLink2:visited{
-    outline-color: red;
+    color: rgb(206, 50, 50);
 }
 
 .front__line{
-    margin-top: 20px;
+    margin-top: 13px;
     margin-bottom: 18px;
     width: 318px;
     border: 1px solid #DFDFE0;
@@ -256,6 +270,7 @@ body{
 .front__downHeadingText{
     margin-top: 8px;
     margin-bottom: 10px;
+    padding-right: 9px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -275,6 +290,7 @@ body{
     
 }
 .front__downInput{
+    
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -282,7 +298,8 @@ body{
 }
 .front__downInput1{
     width: 273px;
-    height: 45px;
+    height: 46px;
+    margin-top: -2px;
     padding-left: 20px;
     border-right: none;
     font-family: 'Inter';
@@ -294,17 +311,19 @@ body{
     border: 1px solid #B6BABD
 }
 .front__downInput2{
-    width: 98px;
-    height: 45px;
+    width: 67px;
+    margin-top: -2px;
+    height: 46px;
     padding-left: 10px;
-    font-family: 'Inter';
+    padding-top: 0px;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
     border: 1px solid #B6BABD;
-    border-left: 2px;
+    border-left: 2px;;
 }
 .front__downButton{
     margin-bottom: 38px;
