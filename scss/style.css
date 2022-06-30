@@ -171,7 +171,7 @@ body {
 
 .front__button1:hover {
   background: #FFFFFF;
-  border: 2px solid #32404E;
+  border: 2px solid #B6BABD;
 }
 
 .front__button2 {
@@ -186,7 +186,7 @@ body {
   letter-spacing: -0.154px;
   color: #32404E;
   background: #FFFFFF;
-  border: 1px solid #B6BABD;
+  border: 2px solid rgba(182, 186, 189, 0.5);
 }
 
 .front__input {
