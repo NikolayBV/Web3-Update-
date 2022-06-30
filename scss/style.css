@@ -186,6 +186,7 @@ body {
 
 .front__input {
   display: flex;
+  justify-content: center;
   margin-top: 9px;
   margin-bottom: 24px;
 }
@@ -219,7 +220,8 @@ body {
 
 .front__buttonContinue {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front__continue {
@@ -302,6 +304,7 @@ body {
 
 .front__downInput {
   display: flex;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 24px;
 }
